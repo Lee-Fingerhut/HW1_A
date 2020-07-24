@@ -39,6 +39,7 @@ bool is_equal(string src, string chk) {
     }
     int count_equal = 0 ;
     for(int i=0; i<src.length(); i++) {
+        //switch to lower case
         src[i] = towlower(src[i]);
         chk[i] = towlower(chk[i]);
             
@@ -116,11 +117,11 @@ string find(string text ,string word) {
     }
     for(int i=0; i<word.length(); i++)
     {
-        if(word[i] == ' ')
-        {
+        if(word[i] == ' '){
             throw myword;
         }
     }
+    
     istringstream iss(text);
     do {
         string subs;
